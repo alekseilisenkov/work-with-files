@@ -11,13 +11,12 @@ import java.nio.charset.StandardCharsets;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class DownloadFile {
+public class DownloadFileTest {
     @Test
     void downloadFile() throws Exception {
         Selenide.open("https://github.com/junit-team/junit5/blob/main/README.md");
         File downloadedFile = Selenide.$("#raw-url").download();
         System.out.println(downloadedFile.toString());
-
         String s;
         try (InputStream is = new FileInputStream(downloadedFile)) {
             s = new String(is.readAllBytes(), StandardCharsets.UTF_8);
