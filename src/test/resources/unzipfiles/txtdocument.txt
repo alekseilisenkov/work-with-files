@@ -1,0 +1,2 @@
+This is document TXT.
+TXT have some text, and if you read it, it means that this test is passed.
