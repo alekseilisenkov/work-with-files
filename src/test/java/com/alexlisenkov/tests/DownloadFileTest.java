@@ -9,8 +9,6 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 
-import static com.codeborne.selenide.Selenide.$;
-
 public class DownloadFileTest {
     @Test
     void downloadFile() throws Exception {

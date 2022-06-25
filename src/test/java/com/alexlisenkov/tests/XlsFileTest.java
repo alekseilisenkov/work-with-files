@@ -1,25 +1,14 @@
 package com.alexlisenkov.tests;
 
-import com.codeborne.selenide.Selenide;
 import com.codeborne.xlstest.XLS;
+
 import org.junit.jupiter.api.Test;
 
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.io.InputStream;
-import java.io.File;
-import java.io.*;
 
 import static com.alexlisenkov.utils.Files.getXls;
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.$;
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.apache.commons.io.FileUtils.getFile;
-import static org.hamcrest.core.StringContains.containsString;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.containsString;
 
-import java.nio.charset.StandardCharsets;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class XlsFileTest {
 
@@ -43,5 +32,3 @@ public class XlsFileTest {
         }
     }
 }
-
-
